@@ -1,0 +1,75 @@
+html,
+body {
+  font-family: "Oswald", "Roboto", sans-serif;
+  color: antiquewhite;
+  margin: 0;
+}
+
+body {
+  background-color: black;
+}
+
+#navbar {
+  top: 0%;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  position: fixed;
+  width: 100%;
+  justify-content: space-between;
+  background-color: #330033;
+  max-height: 150px;
+}
+
+#logo {
+  margin: 10px;
+}
+
+#navbar ul {
+  width: 60%;
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#navbar ul li a {
+  text-decoration: none;
+  color: aliceblue;
+}
+
+#welcome-section {
+  margin-top: 150px;
+  height: 100vh;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: auto;
+  gap: 16px;
+}
+
+.project {
+  width: 100%;
+  height: 100%;
+}
+
+.project-image {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+#contact {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+@media only screen and (max-width: 480px) {
+  .projects-grid {
+    display: block;
+  }
+}
